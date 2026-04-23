@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Abhijeet Kanade— Artist | Developer | Innovator</title>
+<meta name="description" content="Personal portfolio of Abhijeet Kanade — artist, developer and innovator. B.Tech student passionate about web, IoT and creative tech." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<canvas id="bg-particles"></canvas>
+<div id="cursor-spotlight"></div>
+
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="logo">Abhijeet <span>.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="container hero-inner reveal">
+      <p class="eyebrow">Welcome to my space</p>
+      <h1 class="hero-title">
+        Hi, I'm <span class="grad-text">Abhijeet Kanade</span>
+      </h1>
+      <p class="tagline">Artist <span class="dot">•</span> Developer <span class="dot">•</span> Innovator</p>
+      <p class="hero-intro">
+        I'm a B.Tech student who lives at the intersection of code, art and curiosity.
+        I build expressive web experiences, tinker with hardware, and turn ideas into
+        things you can touch, click and feel.
+      </p>
+     <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary glow">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Contact Me</a>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll down">
+        <span></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container about-grid">
+      <div class="about-photo reveal">
+        <div class="photo-glow"></div>
+      <div class="photo-frame">
+    <img src="profile.jpeg" alt="Profile Photo" class="about-img">
+  </div>
+</div>
+      <div class="about-content reveal">
+        <p class="section-eyebrow">About me</p>
+        <h2 class="section-title">A student, an artist, a tech enthusiast.</h2>
+        <p class="lede">
+          I'm currently pursuing my B.Tech, but my real degree comes from the late-night
+          rabbit holes — sketching one moment, soldering an Arduino the next, then
+          shipping a web project before sunrise.
+        </p>
+        <p class="lede">
+          I care about craft. Whether it's a clean line of code, a balanced composition
+          or a circuit that finally works — the goal is always the same: make something
+          that feels alive.
+        </p>
+        <div class="about-tags">
+          <span class="chip">Frontend Engineering</span>
+          <span class="chip">Creative Coding</span>
+          <span class="chip">Visual Art</span>
+          <span class="chip">Problem Solving</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-eyebrow">Toolbox</p>
+        <h2 class="section-title">Skills &amp; Stack</h2>
+        <p class="section-sub">A blend of programming, creative tools and hardware tinkering.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="glass-card skill-cat reveal">
+          <h3 class="cat-title">Programming</h3>
+          <div class="bar-list">
+            <div class="bar-item"><div class="bar-meta"><span>HTML</span><span>95%</span></div><div class="bar"><i style="--w:95%"></i></div></div>
+            <div class="bar-item"><div class="bar-meta"><span>CSS</span><span>90%</span></div><div class="bar"><i style="--w:90%"></i></div></div>
+            <div class="bar-item"><div class="bar-meta"><span>JavaScript</span><span>85%</span></div><div class="bar"><i style="--w:85%"></i></div></div>
+            <div class="bar-item"><div class="bar-meta"><span>DSA</span><span>75%</span></div><div class="bar"><i style="--w:75%"></i></div></div>
+            <div class="bar-item"><div class="bar-meta"><span>DBMS</span><span>90%</span></div><div class="bar"><i style="--w:90%"></i></div></div>
+          </div>
+        </div>
+
+        <div class="glass-card skill-cat reveal">
+          <h3 class="cat-title">Tools &amp; Hardware</h3>
+          <div class="icon-grid">
+            <div class="icon-tile"><div class="ic">VS</div><span>VS Code</span></div>
+            <div class="icon-tile"><div class="ic">GH</div><span>GitHub</span></div>
+            <div class="icon-tile"><div class="ic">SQL</div><span>MySQL</span></div>
+          </div>
+        </div>
+
+        <div class="glass-card skill-cat reveal">
+          <h3 class="cat-title">Creative</h3>
+          <div class="bar-list">
+            <div class="bar-item"><div class="bar-meta"><span>Sketching &amp; Illustration</span><span>92%</span></div><div class="bar"><i style="--w:92%"></i></div></div>
+            <div class="bar-item"><div class="bar-meta"><span>UI / UX Design</span><span>82%</span></div><div class="bar"><i style="--w:82%"></i></div></div>
+            <div class="bar-item"><div class="bar-meta"><span>Photo Editing</span><span>85%</span></div><div class="bar"><i style="--w:85%"></i></div></div>
+            <div class="bar-item"><div class="bar-meta"><span>Storytelling</span><span>88%</span></div><div class="bar"><i style="--w:88%"></i></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-eyebrow">Selected work</p>
+        <h2 class="section-title">Projects</h2>
+      </div>
+
+      <article class="glass-card featured reveal">
+        <div class="featured-content">
+          <span class="badge">Featured Project</span>
+          <h3>	
+              Honk-Aware Adaptive Traffic Control System </h3>
+          <p>
+          A smart traffic management system that dynamically adjusts traffic signals based on real-time vehicle density and honking patterns using sensors and AI.
+          </p>
+          <div class="stack">
+          </div>
+          <div class="card-actions">
+            <a class="btn btn-primary glow" href="#" target="_blank" rel="noopener">View Details</a>
+          </div>
+        </div>
+       
+      </article>
+
+      <div class="projects-grid">
+        <article class="glass-card project reveal">
+          <div class="project-thumb t1">E11ven Cafe Management System</div>
+          <h3> </h3>
+          <p>Successfully developed a working system where users can view menu items and book halls online with smooth navigation and responsive design.</p>
+          <div class="card-actions">
+            <a class="btn btn-primary" href="#" target="_blank" rel="noopener">Live</a>
+          </div>
+        </article>
+
+     
+
+        <article class="glass-card project reveal">
+          <div class="project-thumb t3">Zero Friction Electromagnetic Braking System</div>
+          <h3> </h3>
+          <p> When current flows through the electromagnet, it creates a magnetic field.
+    As the rotating metal disc passes through this field, eddy currents are induced,
+    generating an opposing force that slows down the motion without physical contact.</p>
+          <div class="card-actions">
+            <a class="btn btn-primary" href="#" target="_blank" rel="noopener">Live</a>
+          </div>
+        </article>
+
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-eyebrow">Journey</p>
+        <h2 class="section-title">Experience &amp; Education</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="t-item reveal">
+          <div class="t-dot"></div>
+          <div class="glass-card t-card">
+            <span class="t-date">2024 — 2028</span>
+            <h3>B.Tech in Computer Engineering</h3>
+            <p>Currently pursuing my undergraduate degree, focusing on web development, DSA, DBMS and embedded systems.</p>
+          </div>
+        </div>
+        <div class="t-item reveal">
+          <div class="t-dot"></div>
+          <div class="glass-card t-card">
+            <span class="t-date">2026</span>
+            <h3>Hackathon Finalist</h3>
+            <p>Reached the finals of an inter-college hackathon with a sustainability-focused web app prototype.</p>
+          </div>
+        </div>
+       
+        <div class="t-item reveal">
+          <div class="t-dot"></div>
+          <div class="glass-card t-card">
+            <span class="t-date">2022 — 2024</span>
+            <h3>Higher Secondary — Science</h3>
+            <p>Completed 11th–12th in the Science stream, where I first fell in love with programming and electronics.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container contact-grid">
+      <div class="reveal">
+        <p class="section-eyebrow">Get in touch</p>
+        <h2 class="section-title">Let's build something.</h2>
+        <p class="lede">
+          Have an idea, a project, or just want to say hi? Drop a message — I read
+          every single one.
+        </p>
+        <div class="socials">
+          <a class="social" href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+          <a class="social" href="https://www.linkedin.com/in/abhijeet-kanade-b42249358?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+          <a class="social" href="mailto:2403184@ritindia.edu" aria-label="Email">@</a>
+        </div>
+      </div>
+
+      <form class="glass-card contact-form reveal" id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required placeholder="Your name" />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="you@example.com" />
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Tell me about your idea..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary glow w-full">Send Message</button>
+        <p class="form-status" id="formStatus" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Abhijeet Kanade.</p>
+    <div class="socials small">
+      <a class="social" href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+      <a class="social" href="https://www.linkedin.com/in/abhijeet-kanade-b42249358?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+      <a class="social" href="mailto:atharv@example.com" aria-label="Email">@</a>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
